@@ -257,16 +257,16 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
         int hargaAwal, hargaAkhir, hemat;
         String diskon = comboDiskon.getSelectedItem().toString();
         String kupon = "5persen";
-        hargaAwal = Integer.parseInt(txtHargaAwal.getText()); // Parse input as integer
+        hargaAwal = Integer.parseInt(txtHargaAwal.getText()); // Mengubah input ke dalam integer
 
         // Apply coupon discount first if coupon is valid
         if (txtKupon.getText().equals(kupon)) {
             hargaAkhir = hargaAwal - (hargaAwal * 5 / 100);
         } else {
-            hargaAkhir = hargaAwal; // If no coupon, keep hargaAkhir as hargaAwal
+            hargaAkhir = hargaAwal; // Jika tidak ada kupon hargaAkhir disimpan sebagai hargaAwal
         }
 
-        // Apply additional discount from comboDiskon on hargaAkhir after coupon discount
+        // Tambahkan diskon tambahan setelah adanya kupon
         switch (diskon) {
             case "10%":
                 hargaAkhir -= (hargaAkhir * 10) / 100;
@@ -291,21 +291,21 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
                 break;
         }
 
-        // Calculate savings from hargaAwal
+        // Hitung hemat dari harga awal
         hemat = hargaAwal - hargaAkhir;
 
-        // Display hargaAkhir and hemat in text fields
+        // Menampilkan hasil
         txtHargaAkhir.setText(String.valueOf(hargaAkhir));
         txtHemat.setText(String.valueOf(hemat));
 
-        // Append history to areaRiwayat
+        // Menambahkan history
         String history = "Harga Awal: " + hargaAwal + ", Diskon: " + diskon 
                          + ", Kupon: " + (txtKupon.getText().equals(kupon) ? "5%" : "None") 
                          + ", Harga Akhir: " + hargaAkhir + ", Hemat: " + hemat + "\n";
         areaRiwayat.append(history);
 
         } catch (NumberFormatException e) {
-            // Display an error message if the user enters non-numeric values
+            // Validasi input
             javax.swing.JOptionPane.showMessageDialog(this, "Masukkan hanya angka untuk harga awal.", 
                     "Input Tidak Valid", javax.swing.JOptionPane.ERROR_MESSAGE);
         }
