@@ -1,8 +1,6 @@
 
 # Aplikasi Perhitungan Diskon
 Tugas 3 - Muhammad Raihan Fadhillah 2210010404
-## Deskripsi
-Aplikasi Perhitungan Diskon adalah program berbasis Java yang dirancang untuk menghitung harga akhir setelah penerapan diskon. Aplikasi ini memiliki antarmuka pengguna grafis (GUI) yang intuitif, memungkinkan pengguna untuk memasukkan harga awal, memilih diskon, dan menerapkan kupon diskon. Hasil perhitungan akan ditampilkan secara langsung, dan riwayat diskon yang diterapkan akan disimpan dalam aplikasi.
 
 ## Daftar Isi
 - [Deskripsi](#deskripsi)
@@ -13,6 +11,9 @@ Aplikasi Perhitungan Diskon adalah program berbasis Java yang dirancang untuk me
 - [Screenshots](#screenshots)
 - [Contoh Penggunaan](#contoh-penggunaan)
 - [Pembuat](#pembuat)
+
+## Deskripsi
+Aplikasi Perhitungan Diskon adalah program berbasis Java yang dirancang untuk menghitung harga akhir setelah penerapan diskon. Aplikasi ini memiliki antarmuka pengguna grafis (GUI) yang intuitif, memungkinkan pengguna untuk memasukkan harga awal, memilih diskon, dan menerapkan kupon diskon. Hasil perhitungan akan ditampilkan secara langsung, dan riwayat diskon yang diterapkan akan disimpan dalam aplikasi.
 
 ## Prerequisites
 Sebelum menjalankan aplikasi ini, pastikan Anda telah menginstal:
